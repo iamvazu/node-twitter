@@ -1,6 +1,7 @@
 # Node Twitter
 
 [![Build Status](https://travis-ci.org/vinitkumar/node-twitter.svg?branch=master)](https://travis-ci.org/vinitkumar/node-twitter)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinitkumar%2Fnode-twitter.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinitkumar%2Fnode-twitter?ref=badge_shield)
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/vinitkumar/node-twitter.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/vinitkumar/node-twitter/alerts/)
 
@@ -51,6 +52,22 @@ module.exports = {
   }
 };
 ```
+## Usage via Docker
+
+
+The fastest way to get this running is with docker. Docker bootstrap all dependencies and
+you can just run these couple of commands to get it up and running.
+
+```
+# first build the container
+docker-compose --log-level DEBUG build web
+
+# then run the server like this:
+
+docker-compose run --service-ports web
+```
+Now, open the website on http://localhost:3000 and it should just work.
+
 
 ## Usage
 
@@ -144,7 +161,10 @@ Thank you to all our sponsors! (please ask your company to also support this ope
 
 <!-- This `CONTRIBUTING.md` is based on @nayafia's template https://github.com/nayafia/contributing-template -->
 ## License
-[GPL-3.0](https://github.com/vinitkumar/node-twitter/blob/master/License)
+[Apache License 2.0](https://github.com/vinitkumar/node-twitter/blob/master/License)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinitkumar%2Fnode-twitter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinitkumar%2Fnode-twitter?ref=badge_large)
 
 ## Important
 
